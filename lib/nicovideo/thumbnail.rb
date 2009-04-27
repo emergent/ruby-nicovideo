@@ -18,7 +18,7 @@ module Nicovideo
 			retry_count = 0
       begin
         body = timeout(wait_sec) do
-          open("http://www.nicovideo.jp/api/getthumbinfo/#{video_id}", :proxy => @proxy_url) do |f|
+          open("http://ext.nicovideo.jp/api/getthumbinfo/#{video_id}", :proxy => @proxy_url) do |f|
             f.read
           end
         end
@@ -34,11 +34,14 @@ module Nicovideo
 		end
 		
 		def get_elements(parent)
-			thumbnail_info = {}
+			thumbnail_info = ThumbInfo.new
 
 			parent.each_element do |element|
-				if element.has_elements? then
-					thumbnail_info[element.name] = element.texts # doesn't support recursive xml.
+				if element.name == 'tags' then
+          thumbnail_info.tags[element.attributes['domain']] = []
+          element.each_element do |child|
+            thumbnail_info.tags[element.attributes['domain']] << child.text
+          end
 					next
 			  end
 				thumbnail_info[element.name] = element.text
@@ -46,4 +49,20 @@ module Nicovideo
   		thumbnail_info
 		end
 	end
+
+  class ThumbInfo < Hash
+    attr_accessor :tags
+    def initialize
+      @tags = {}
+    end
+
+    def has_tag?(tag)
+      @tag_hash ||= tag_flatten.inject({}) {|tag_hash, temp_tag| tag_hash[temp_tag] = temp_tag}
+      @tag_hash.has_key? tag
+    end
+
+    def tag_flatten
+      @tag_flatten ||= @tags.values.flatten
+    end
+  end
 end
