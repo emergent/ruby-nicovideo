@@ -10,6 +10,9 @@ class TestNicovideoMyList < Test::Unit::TestCase
     @mid_valid    = '3982404' # 公開マイリスト
     @mid_invalid  = 'smfdsaf' # IDが間違っている
     @mid_notopened = '3825220' # 非公開
+    @mid_testers_own = '12149071'     # テスト用アカウントに登録されているマイリストのID
+
+    @vid_valid    = 'sm2407057' # 閲覧可能(短い動画)
   end
 
   def test_mylist_valid
@@ -66,6 +69,23 @@ class TestNicovideoMyList < Test::Unit::TestCase
     assert_raise(Nicovideo::Forbidden) { ml.title }
     assert_raise(Nicovideo::Forbidden) { ml.description }
     assert_raise(Nicovideo::Forbidden) { ml.videos }
+
+    sleep 5
+  end
+
+  def test_add
+    ml = nil
+    assert_nothing_raised {
+      ml = @nv.mylist(@mid_testers_own)
+    }
+
+    # FIXME removing video function is NOT implemented,
+    # so you MUST remove video from mylist before test.
+    assert_nothing_raised {
+      ml.add @vid_valid
+    }
+
+    assert_equal(@vid_valid, ml.videos.last.video_id)
 
     sleep 5
   end
