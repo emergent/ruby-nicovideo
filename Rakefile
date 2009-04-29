@@ -1,3 +1,9 @@
+class NilClass
+  def empty?
+    true
+  end
+end
+
 require 'config/requirements'
 require 'config/hoe' # setup Hoe + all gem configuration
 
