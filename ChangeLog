@@ -1,3 +1,9 @@
+2009-05-01 version 0.1.8
+
+	* added function of adding video to mylist (by id:yasuyuki)
+	* fixed getting tags (by id:yasuyuki)
+	* fixed method 'search', 'tagsearch', 'openlist'
+
 2008-10-09  version 0.1.7
 
 	* fixed subtitle of Nicovideo (summer -> autumn)

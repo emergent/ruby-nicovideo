@@ -61,24 +61,24 @@ module Nicovideo
 
     protected
     def parse(page)
-      if page.body =~ /<strong>#{@video_id}<\/strong>を含む公開マイリストはありません。/
+      if page.body =~ /<strong.*?>#{@video_id}<\/strong> を登録している公開マイリストはありません。/
         @not_found = true
         raise NotFound
       end
 
-      @total_size = page.search('//form[@name="sort"]//td[@class="TXT12"]//strong').first.inner_html.sub(/,/,'').to_i
+      @total_size = page.search('//div[@class="mb8p4"]//p[@class="TXT12"]//strong').first.inner_html.sub(/,/,'').to_i
 
       @has_next = false
       @has_prev = false
-      respages = page/'//div[@class="mb16p4"]//p[@class="TXT12"]//a'
+      respages = page/'//div[@class="pagelink"]'
       puts_info respages.size
       respages.each {|r| puts_info r.inner_html }
       if respages.size > 0
         respages.each {|text|
-          if text.inner_html =~ /前のページ/
+          if text.inner_html =~ /<a class="prevpage".*?>.*?戻る.*?<\/a>/
             @has_prev = true
           end
-          if text.inner_html =~ /次のページ/
+          if text.inner_html =~ /<a class="nextpage".*?>.*?進む.*?<\/a>/
             @has_next = true
           end
         }

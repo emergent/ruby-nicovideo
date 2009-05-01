@@ -62,7 +62,8 @@ hoe = Hoe.new(GEM_NAME, VERS) do |p|
   p.changes = p.paragraphs_of("ChangeLog", 0..1).join("\\n\\n")
   #p.extra_deps = []     # An array of rubygem dependencies [name, version], e.g. [ ['active_support', '>= 1.3.1'] ]
   p.extra_deps = [
-                  ['mechanize', '>=0.6.0']
+                  ['mechanize', '>=0.9.2'],
+		  ['json', '>=1.1.4']
                  ]
   #p.spec_extras = {}    # A hash of extra values to set in the gemspec.
 end
