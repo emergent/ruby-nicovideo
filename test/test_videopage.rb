@@ -8,7 +8,8 @@ class TestNicovideoVideoPage < Test::Unit::TestCase
     @nv.login
 
 #    @vid_valid    = 'sm500873' # 閲覧可能(組曲)
-    @vid_valid    = 'sm2407057' # 閲覧可能(短い動画)
+    #@vid_valid    = 'sm2407057' # 閲覧可能(短い動画)
+    @vid_valid    = 'sm9' # 閲覧可能(短い動画)
     @vid_invalid  = 'smfdsafd' # IDが間違っている
     @vid_notfound = 'sm500875' # 削除済み
   end

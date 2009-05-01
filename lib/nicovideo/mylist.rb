@@ -62,7 +62,7 @@ module Nicovideo
     private
     def parse(page)
       @rss = RSS::Parser.parse(page.body)
-      @title = rss.channel.title.sub(/#{BASE_TITLE2+NICO_MYLIST} /, '')
+      @title = rss.channel.title.sub(/#{BASE_TITLE1}/,'').sub(/#{NICO_MYLIST} /, '')
       @user  = rss.channel.managingEditor
       @description = rss.channel.description
 

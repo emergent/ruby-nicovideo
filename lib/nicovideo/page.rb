@@ -6,8 +6,8 @@ module Nicovideo
     NV_DEBUG_LEVEL = 0
 
     BASE_URL = 'http://www.nicovideo.jp'
-    BASE_TITLE1  = '‐ニコニコ動画\(秋\)'.toutf8
-    BASE_TITLE2  = 'ニコニコ動画\(秋\)‐'.toutf8
+    BASE_TITLE1  = '‐ニコニコ動画\(.*?\)'.toutf8
+    BASE_TITLE2  = 'ニコニコ動画\(.*?\)‐'.toutf8
 
     def initialize agent
       @agent = agent
