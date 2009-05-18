@@ -1,3 +1,6 @@
+2009-05-18
+	* change adding mylist return value from self to VideoPage instance.
+
 2009-05-02
 	* added function of community information loader.
 
