@@ -18,3 +18,5 @@ require 'nicovideo/thumbnail'
 #require 'nicovideo/ichiba'
 #require 'nicovideo/feed'
 
+require 'nicovideo/community/community_page'
+require 'nicovideo/community/main'

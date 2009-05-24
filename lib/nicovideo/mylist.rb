@@ -41,7 +41,7 @@ module Nicovideo
           # added video isn't applied to rss immediately, so add video into list by hand.
           page = @page || get_page(@url)
           @videos << video_page
-          return self
+          return video_page
         end
         raise ArgError if result_code["result"] == "duperror"
         raise StandardError

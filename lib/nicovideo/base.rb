@@ -105,6 +105,10 @@ module Nicovideo
       OpenList.new(@agent, video_id)
     end
 
+    def community(community_id)
+      Community::Main.new(@agent, community_id)
+    end
+
     def random()
       Random.new(@agent)
     end
