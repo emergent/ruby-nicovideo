@@ -66,4 +66,17 @@ class TestNicovideoCommunityMain < Test::Unit::TestCase
 
     sleep 5
   end
+
+  def test_community_add_video
+    co = nil
+    assert_nothing_raised {
+      co = @nv.community(@cid_valid)
+    }
+
+    assert_nothing_raised {
+      co.add_video('sm9')
+    }
+
+    sleep 5
+  end
 end

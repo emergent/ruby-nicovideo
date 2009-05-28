@@ -12,6 +12,16 @@ module Nicovideo::Community
     attr_reader :community_id, :url
     def id()   @community_id end
 
+    def add_video(video_id, visibility = 1)
+      result = @agent.post(COMMUNITY_BASE_URL + "/edit_video", :mode => "upload", :community_id => @community_id, 
+                            :video_id => video_id, :public => visibility)
+
+      error_description = result.search("//p[@class='TXT12 error_description']")
+      return if error_description.empty?
+
+      raise Nicovideo::Forbidden.new(error_description.inner_html)
+    end
+
     private
     def parse(page)
       raise Nicovideo::NotFound if @not_found
