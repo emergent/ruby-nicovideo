@@ -80,6 +80,9 @@ module Nicovideo
         else
           raise e
         end
+      rescue Exception => e
+        puts_debug e.to_s
+        raise e
       end
       @page
     end
