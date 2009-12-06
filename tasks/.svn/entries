@@ -1,0 +1,52 @@
+8
+
+dir
+32984
+http://svn.coderepos.org/share/lang/ruby/nicovideo_gem/trunk/tasks
+http://svn.coderepos.org/share
+
+
+
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+
+
+svn:special svn:externals svn:needs-lock
+
+deployment.rake
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+2d9fe35a0fd697109c2c77085b3d4a66
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+
+website.rake
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+0fb4c80809dddf4ae897c6a82901e8ac
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+
+environment.rake
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+917a284d2b5e33fb48d3ae2937cccfb9
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+

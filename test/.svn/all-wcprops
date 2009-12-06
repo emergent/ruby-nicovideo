@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/share/!svn/ver/32711/lang/ruby/nicovideo_gem/trunk/test
+END
+test_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_helper.rb
+END
+test_nicovideo.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_nicovideo.rb
+END
+test_random.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_random.rb
+END
+test_mylist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/share/!svn/ver/32985/lang/ruby/nicovideo_gem/trunk/test/test_mylist.rb
+END
+test_tagsearch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_tagsearch.rb
+END
+test_videopage.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/share/!svn/ver/32985/lang/ruby/nicovideo_gem/trunk/test/test_videopage.rb
+END
+test_thumbnail.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8258/lang/ruby/nicovideo_gem/trunk/test/test_thumbnail.rb
+END
+test_search.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_search.rb
+END
+test_login.rb
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_login.rb
+END
+test_ranking.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_ranking.rb
+END
+runner.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/runner.rb
+END
+test_newarrival.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_newarrival.rb
+END
+test_openlist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/test/test_openlist.rb
+END

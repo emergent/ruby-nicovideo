@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/share/!svn/ver/32713/lang/ruby/nicovideo_gem/trunk/sample
+END
+nv_add_movie_to_mylist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/share/!svn/ver/32713/lang/ruby/nicovideo_gem/trunk/sample/nv_add_movie_to_mylist.rb
+END
+nv_openlist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/sample/nv_openlist.rb
+END
+nv_mylist.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/sample/nv_mylist.rb
+END
+nv_tagsearch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8504/lang/ruby/nicovideo_gem/trunk/sample/nv_tagsearch.rb
+END
+nv_download.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/sample/nv_download.rb
+END
+nv_download2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/sample/nv_download2.rb
+END
+nv_ranking.rb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/sample/nv_ranking.rb
+END

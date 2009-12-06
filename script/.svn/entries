@@ -1,0 +1,55 @@
+8
+
+dir
+32984
+http://svn.coderepos.org/share/lang/ruby/nicovideo_gem/trunk/script
+http://svn.coderepos.org/share
+
+
+
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+
+
+svn:special svn:externals svn:needs-lock
+
+txt2html
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+3a745b13a5b0fc24ef830e4c5019f76c
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+has-props
+
+destroy
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+316f5c5aaf48b8658a3d4b8a82049354
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+has-props
+
+generate
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+d23c8ed88faa5023aebec81109898fb4
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+has-props
+

@@ -1,0 +1,43 @@
+8
+
+dir
+32984
+http://svn.coderepos.org/share/lang/ruby/nicovideo_gem/trunk/lib
+http://svn.coderepos.org/share
+
+
+
+2009-04-21T15:57:38.708955Z
+32711
+yasuyuki
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d0d07461-0603-4401-acd4-de1884942a52
+
+nicovideo
+dir
+
+nicovideo.rb
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+ff22d98570822811769c1a347ebf3fe6
+2008-03-21T13:32:30.158495Z
+8258
+yasuyuki
+

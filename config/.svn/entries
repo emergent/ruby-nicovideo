@@ -1,0 +1,52 @@
+8
+
+dir
+32984
+http://svn.coderepos.org/share/lang/ruby/nicovideo_gem/trunk/config
+http://svn.coderepos.org/share
+
+
+
+2008-07-16T16:11:07.186415Z
+15907
+emergent
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d0d07461-0603-4401-acd4-de1884942a52
+
+requirements.rb
+file
+
+
+
+
+2009-05-01T04:54:33.000000Z
+c5e6ad68f099de4b5bf65a94b1b48408
+2008-03-20T07:47:30.207281Z
+8188
+emergent
+
+hoe.rb
+file
+32985
+
+
+
+2009-05-01T04:54:33.000000Z
+27ac0c3f194512a2e68932f08f33b3ea
+2009-05-01T05:01:16.284753Z
+32985
+emergent
+

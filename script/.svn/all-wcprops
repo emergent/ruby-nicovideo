@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/script
+END
+txt2html
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/script/txt2html
+END
+destroy
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/script/destroy
+END
+generate
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/script/generate
+END

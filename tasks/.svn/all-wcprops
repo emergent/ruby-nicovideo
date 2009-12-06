@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/tasks
+END
+deployment.rake
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/tasks/deployment.rake
+END
+website.rake
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/tasks/website.rake
+END
+environment.rake
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/share/!svn/ver/8188/lang/ruby/nicovideo_gem/trunk/tasks/environment.rake
+END
