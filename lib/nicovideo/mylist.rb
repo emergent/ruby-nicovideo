@@ -24,8 +24,8 @@ module Nicovideo
     def id()  @mylist_id end
     def url() @raw_url   end
 
-    def add(video_id)
-      video_page = VideoPage.new @agent, video_id
+    def add(video)
+      video_page = video.respond_to?(:csrf_token) ? video : VideoPage.new(@agent, video)
 
       begin
         add_result = @agent.post(video_page.url, {
@@ -41,7 +41,7 @@ module Nicovideo
           # added video isn't applied to rss immediately, so add video into list by hand.
           page = @page || get_page(@url)
           @videos << video_page
-          return self
+          return video_page
         end
         raise ArgError if result_code["result"] == "duperror"
         raise StandardError

@@ -10,7 +10,7 @@ class TestNicovideoMyList < Test::Unit::TestCase
     @mid_valid    = '3982404' # 公開マイリスト
     @mid_invalid  = 'smfdsaf' # IDが間違っている
     @mid_notopened = '3825220' # 非公開
-    @mid_testers_own = '12149071'     # テスト用アカウントに登録されているマイリストのID
+    #@mid_testers_own = '12149071'     # テスト用アカウントに登録されているマイリストのID
 
     @vid_valid    = 'sm2407057' # 閲覧可能(短い動画)
   end
