@@ -18,6 +18,9 @@ lib/nicovideo/tagsearch.rb
 lib/nicovideo/thumbnail.rb
 lib/nicovideo/newarrival.rb
 lib/nicovideo/random.rb
+lib/nicovideo/advertise.rb
+lib/nicovideo/community/community_page.rb
+lib/nicovideo/community/main.rb
 test/test_helper.rb
 test/runner.rb
 test/test_nicovideo.rb
@@ -30,8 +33,12 @@ test/test_search.rb
 test/test_tagsearch.rb
 test/test_newarrival.rb
 test/test_random.rb
+test/test_advertise.rb
+test/test_thumbnail.rb
 sample/nv_download.rb
 sample/nv_download2.rb
 sample/nv_mylist.rb
 sample/nv_openlist.rb
 sample/nv_ranking.rb
+sample/nv_add_movie_to_mylist.rb
+sample/nv_tagsearch.rb
