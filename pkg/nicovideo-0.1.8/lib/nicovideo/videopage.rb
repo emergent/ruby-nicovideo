@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 require 'kconv'
 require 'cgi'
 
@@ -83,12 +84,9 @@ module Nicovideo
       }
 
       # published_at
-      str = page.search("div[@id='WATCHHEADER']//p[@class='TXT12']/strong")[0].inner_text
+      str = page.search("div[@id='WATCHHEADER']//p[@class='font12']/strong")[0].inner_text
       tm = str.scan(/\d+/)
       @published_at = Time.mktime(*tm)
-      
-      # csrf_token
-      @csrf_token = page.search("form[@name='mylist_form']//input[@name='csrf_token']")[0]['value']
     end
     
     def get_params

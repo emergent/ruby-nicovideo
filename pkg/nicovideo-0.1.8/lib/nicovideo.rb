@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 $:.unshift File.dirname(__FILE__)
 
 require 'rubygems'
@@ -14,7 +15,10 @@ require 'nicovideo/ranking'
 require 'nicovideo/random'
 require 'nicovideo/newarrival'
 require 'nicovideo/thumbnail'
+#require 'nicovideo/advertise'
 #require 'nicovideo/tags'
 #require 'nicovideo/ichiba'
 #require 'nicovideo/feed'
 
+require 'nicovideo/community/community_page'
+require 'nicovideo/community/main'

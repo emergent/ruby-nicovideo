@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 module Nicovideo #:nodoc:
   module VERSION #:nodoc:
     MAJOR = 0

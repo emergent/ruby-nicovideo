@@ -18,6 +18,8 @@ lib/nicovideo/tagsearch.rb
 lib/nicovideo/thumbnail.rb
 lib/nicovideo/newarrival.rb
 lib/nicovideo/random.rb
+lib/nicovideo/community/community_page.rb
+lib/nicovideo/community/main.rb
 test/test_helper.rb
 test/runner.rb
 test/test_nicovideo.rb

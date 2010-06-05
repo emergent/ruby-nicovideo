@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 # file: mechanize-ext.rb
 require 'mechanize'
 

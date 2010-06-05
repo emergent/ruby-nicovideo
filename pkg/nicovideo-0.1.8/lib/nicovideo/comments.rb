@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 class Nicovideo::Comments
   def initialize video_id, xml
     @video_id = video_id

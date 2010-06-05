@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 module Nicovideo
   class Ranking < Page
     def initialize agent, type='mylist', span='daily', category='all', pagenum=nil

@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 module Nicovideo
 
   class ArgError         < StandardError ; end
@@ -103,6 +104,10 @@ module Nicovideo
 
     def openlist(video_id)
       OpenList.new(@agent, video_id)
+    end
+
+    def community(community_id)
+      Community::Main.new(@agent, community_id)
     end
 
     def random()
