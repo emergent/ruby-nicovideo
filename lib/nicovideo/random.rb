@@ -1,3 +1,4 @@
+#-*- coding:utf-8 -*-
 module Nicovideo
   class Random < Page
     include Enumerable
