@@ -70,7 +70,7 @@ module Nicovideo
 
         parse(page)
         @page = page
-      rescue WWW::Mechanize::ResponseCodeError => e
+      rescue Mechanize::ResponseCodeError => e
         rc = e.response_code
         puts_info rc
         if rc == "404" || rc == "410"

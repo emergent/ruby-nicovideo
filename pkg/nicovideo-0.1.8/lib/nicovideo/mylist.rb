@@ -46,7 +46,7 @@ module Nicovideo
         end
         raise ArgError if result_code["result"] == "duperror"
         raise StandardError
-      rescue WWW::Mechanize::ResponseCodeError => e
+      rescue Mechanize::ResponseCodeError => e
         rc = e.response_code
         puts_info rc
         if rc == "404" || rc == "410"

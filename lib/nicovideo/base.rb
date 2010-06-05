@@ -11,7 +11,7 @@ module Nicovideo
     def initialize mail=nil, password=nil, auto_login=true
       @mail = mail
       @password = password
-      @agent = WWW::Mechanize.new()
+      @agent = Mechanize.new()
       agent_init(auto_login)
       @agent.set_account(@mail, @password)
 
