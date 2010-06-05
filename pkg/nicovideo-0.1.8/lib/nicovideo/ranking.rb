@@ -25,10 +25,10 @@ module Nicovideo
 
     protected
     def parse(page)
-      ranking = page/'h3/a[@class=video]'
+      ranking = page.search('a[@class=watch]')
       @videos = ranking.inject([]) {|arr,v| #
         #puts v.attributes['href']
-        vp = VideoPage.new(@agent, v.attributes['href'].sub(/#{BASE_URL}\/watch\/(\w+)$/,'\1'))
+        vp = VideoPage.new(@agent, v.attributes['href'].value.sub(/#{BASE_URL}\/watch\/(\w+)$/,'\1'))
         vp.title = v.inner_html
         arr << vp
       }
