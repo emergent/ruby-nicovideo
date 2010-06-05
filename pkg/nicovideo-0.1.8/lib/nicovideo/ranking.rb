@@ -7,6 +7,7 @@ module Nicovideo
       @category = category
       @pagenum  = pagenum
       @url      = url()
+      @span     = span
       self.register_getter ["videos"]
     end
 
