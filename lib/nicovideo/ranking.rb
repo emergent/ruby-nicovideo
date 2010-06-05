@@ -6,8 +6,8 @@ module Nicovideo
       @type     = type
       @category = category
       @pagenum  = pagenum
-      @url      = url()
       @span     = span
+      @url      = url()
       self.register_getter ["videos"]
     end
 
@@ -25,10 +25,10 @@ module Nicovideo
 
     protected
     def parse(page)
-      ranking = page.search('a[@class=watch]')
+      ranking = page.search('div[@class=content_672]/div//a[@class=watch]')
       @videos = ranking.inject([]) {|arr,v| #
         #puts v.attributes['href']
-        vp = VideoPage.new(@agent, v.attributes['href'].value.sub(/#{BASE_URL}\/watch\/(\w+)$/,'\1'))
+        vp = VideoPage.new(@agent, v.attributes['href'].value.sub(/watch\/(\w+)$/){$1})
         vp.title = v.inner_html
         arr << vp
       }

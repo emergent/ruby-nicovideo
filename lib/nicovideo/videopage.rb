@@ -74,7 +74,7 @@ module Nicovideo
     private
     def parse(page)
       # title
-      @title = page.title.toutf8.sub(/#{BASE_TITLE1}$/ou, '')
+      @title = page.title.sub(/#{BASE_TITLE1}$/ou, '')
 
       # tags
       div = page.parser.search("div#video_tags")

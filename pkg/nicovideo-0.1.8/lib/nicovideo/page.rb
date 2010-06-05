@@ -7,7 +7,7 @@ module Nicovideo
     NV_DEBUG_LEVEL = 0
 
     BASE_URL = 'http://www.nicovideo.jp'
-    BASE_TITLE1  = '‐ニコニコ動画\(.*?\)'.toutf8
+    BASE_TITLE1  = '‐?ニコニコ動画.+$'.toutf8
     BASE_TITLE2  = 'ニコニコ動画\(.*?\)‐'.toutf8
 
     def initialize agent
@@ -42,7 +42,7 @@ module Nicovideo
     def register_getter(params)
       params.each {|p|
         p_noq = p.sub(/\?$/,'')
-        eval <<-E
+        instance_eval <<-E
           @#{p_noq} = nil
           def #{p}
             if @#{p_noq}.nil?
